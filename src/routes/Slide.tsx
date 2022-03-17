@@ -15,26 +15,30 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
-  border-bottom: 1px solid #aaa;
+  height: 7vh;
+  border-bottom: 1px solid ${(props) => props.theme.pointColor};
 `;
 
 const CloseBtn = styled.button`
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  margin: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   svg {
-    color: #aaa;
+    color: ${(props) => props.theme.pointColor};
     width: 30px;
     height: 30px;
     margin-bottom: 5px;
   }
+  span {
+    font-size: 12px;
+  }
 `;
 
 const Main = styled.main`
-  height: 95vh;
+  height: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +140,7 @@ function Slide({ data }: SlideProps) {
         <Link to="/">
           <CloseBtn>
             <BsXSquareFill />
+            <span>닫기</span>
           </CloseBtn>
         </Link>
       </Header>

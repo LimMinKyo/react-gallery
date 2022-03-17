@@ -7,7 +7,7 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   height: 70px;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid ${(props) => props.theme.pointColor};
 `;
 
 const CloseBtn = styled.button`
@@ -17,7 +17,7 @@ const CloseBtn = styled.button`
   justify-content: center;
   align-items: center;
   svg {
-    color: #aaa;
+    color: ${(props) => props.theme.pointColor};
     width: 30px;
     height: 30px;
     margin-bottom: 5px;
@@ -44,7 +44,7 @@ const InnerHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   span {
-    color: #aaa;
+    color: ${(props) => props.theme.pointColor};
   }
 `;
 
@@ -63,7 +63,7 @@ const Select = styled.div`
   display: flex;
   align-items: center;
   padding: 5px 5px;
-  border: 1px solid #aaa;
+  border: 1px solid ${(props) => props.theme.pointColor};
   border-radius: 3px;
   &:first-child {
     margin-right: 10px;
