@@ -72,7 +72,7 @@ const Select = styled.div`
     font-size: 14px;
     line-height: 14px;
     color: black;
-    margin-right: 40px;
+    margin-right: 2rem;
   }
 `;
 
@@ -80,10 +80,14 @@ const GalleryWrap = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 200px;
+  grid-auto-rows: minmax(200px, auto);
   gap: 20px;
   a {
     display: block;
+  }
+  @media screen and (max-width: 1080px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
   }
 `;
 
@@ -91,10 +95,15 @@ const Picture = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
+  max-height: 200px;
   border-radius: 5px;
   cursor: pointer;
   &:hover {
     opacity: 0.5;
+  }
+  @media screen and (max-width: 1080px) {
+    height: 150px;
+    max-height: 150px;
   }
 `;
 
