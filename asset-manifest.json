@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/react-gallery/static/js/main.b09efd41.js",
+    "index.html": "/react-gallery/index.html",
+    "main.b09efd41.js.map": "/react-gallery/static/js/main.b09efd41.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b09efd41.js"
+  ]
+}
